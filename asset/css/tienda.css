@@ -1,0 +1,250 @@
+/* asset/css/tienda.css - Versión actualizada con header fijo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 1;
+}
+
+body {
+    background-color: rgba(42, 172, 248, 1);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+background-color: rgb(17, 17, 17); 
+display: flex; 
+min-height: 70px;
+align-items: center;
+justify-content: center
+}
+
+.menu-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.items-menu {
+    background-color: transparent;
+    color: rgb(240, 240, 240);
+    border: 2.2px solid rgb(15, 203, 93);
+    padding: 10px 15px;
+    border-radius: 10px; /* Redondeados */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.items-menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.items-menu:hover {
+    background-color: rgb(50, 204, 243); /* Color más claro al hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.items-menu.logo {
+    border: none;
+    padding: 0;
+}
+
+.items-menu.logo img {
+    height: 50px; /* Ajusta logo */
+    position: relative;
+
+}
+
+.carrusel {
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.carrusel-contenedor {
+    position: relative;
+}
+
+#imagen-carrusel {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.flecha {
+    background-color: rgba(74, 225, 236, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.izquierda {
+    left: 10px;
+}
+
+.derecha {
+    right: 10px;
+}
+
+.flecha:hover {
+    background-color: #a4e2ff;
+}
+
+.container-hardware {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.harware {
+    background-color: #21098bb1;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.33% - 30px);
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.harware img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.harware h2 {
+    color: #fff;
+    margin: 10px 0;
+}
+
+.harware p {
+    color: #fff;
+    margin: 10px 0;
+}
+
+.harware button {
+    background-color: #fff;
+    color: #190931;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: auto;
+}
+
+.harware button:hover {
+    background-color: #b26ceb;
+    color: #fff;
+}
+
+.descripcion {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #022150;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.contacto-footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.footer-redes a img {
+    width: 38px;
+    height: 38px;
+    padding: 3px;
+}
+
+.footer-redes a:hover {
+transition: transform 0.2s, box-shadow 0.3s;
+transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+@media (max-width: 600px) {
+    .container-form {
+        margin: 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+}

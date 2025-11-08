@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardware Gamer - Contacto</title>
+    <link rel="stylesheet" href="asset/css/contacto.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="menu-bar">
+          <li class="items-menu logo">
+            <a href="index.html">
+              <img
+                src="asset/img/logos/local/logo-elite-neon.png"
+                alt="Logo logo-elite-neon"
+              />
+            </a>
+          </li>
+          <li class="items-menu">
+            <a href="index.html">Inicio </a>
+          </li>
+          <li class="items-menu"><a href="tienda.html">Tienda</a></li>
+          <li class="items-menu"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-form">
+        <h2>Complete sus datos</h2>
+        <div class="form-container">
+          <h3>Mis datos:</h3>
+          <form id="formulario-1" novalidate>
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" />
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" />
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="2"></textarea>
+
+            <div class="buttons">
+              <input type="submit" value="Enviar" />
+              <input type="reset" value="Reset" />
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Mensaje de éxito y datos enviados FUERA del container-form pero DENTRO de main -->
+      <div id="mensaje-exito"></div>
+      
+      <div id="datos-enviados" style="display: none">
+        <h2>Gracias <span id="nombre-usuario"></span></h2>
+        <h3>Email: <span id="correo-span"></span></h3>
+        <h3>Teléfono: <span id="telefono-divloco"></span></h3>
+        <h3>Mensaje: <span id="mensaje-span"></span></h3>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section contacto-footer">
+          <h3>Contacto</h3>
+          <p>Email: info@hardwaregamer.com</p>
+          <p>Teléfono: +54 2657 1234-5678</p>
+        </div>
+        <div class="footer-section">
+          <h3>Nuestras redes sociales</h3>
+          <div class="footer-redes">
+            <a href="https://www.facebook.com" target="_blank"
+              ><img
+                src="./asset/img/logos/redes-sociales/facebook.png"
+                alt="Facebook"
+              />
+            </a>
+            <a href="https://x.com" target="_blank">
+              <img src="./asset/img/logos/redes-sociales/x.png" alt="Twitter" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img
+                src="./asset/img/logos/redes-sociales/instagram.png"
+                alt="Instagram"
+              />
+            </a>
+            <a href="https://wa.me/265712345678" target="_blank">
+              <img
+                src="./asset/img/logos/redes-sociales/whatsapp.png"
+                alt="WhatsApp"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hardware Gamer. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="asset/js/contacto.js"></script>
+  </body>
+</html>

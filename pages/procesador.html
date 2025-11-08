@@ -1,0 +1,87 @@
+<!-- Updated pages/procesador.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Gamer - Procesador</title>
+    <link rel="stylesheet" href="../asset/css/detalle.css">
+</head>
+<body>
+    <header class="header-class">
+      <nav>
+        <ul class="menu-bar">
+          <li class="item-menu logo">
+            <a href="../index.html">
+              <img src="asset/img/logo.png" alt="Logo Hardware Gamer" />
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="../index.html">Inicio </a>
+          </li>
+          <li class="item-menu">
+            <a href="../tienda.html">Tienda</a>
+          </li>
+          <li class="item-menu"><a href="../contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contenedor-todo">
+        <h2>Procesadores Gamer</h2>
+        <section>
+            <div class="container-camiseta">
+                <button class="flecha izquierda" onclick="anteriorImagen()">&#9664;</button>
+                <img id="imagen-carrusel" src="" alt="">
+                <button class="flecha derecha" onclick="siguienteImagen()">&#9654;</button>
+            </div>
+        </section>
+        <div class="descripcion">
+            <p>Procesadores de alta gama para gaming intensivo.</p>
+            <h2>Precio: 45.000$ ARG</h2>
+        </div>
+        <br><br>
+        <button class="boton-comprar">Añadir Al Carrito</button>
+        <br><br>
+    </section>
+
+    <script src="../asset/js/carousel.js"></script>
+    <script>
+        const images = [
+            'https://assetsio.gnwcdn.com/Best-CPUs-for-gaming-header.JPG?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp',
+            'https://www.pcworld.com/wp-content/uploads/2023/10/cpu-hub-100758206-orig.jpg?quality=50&strip=all',
+            'https://i.pcmag.com/imagery/articles/00a9oZ7V5a0Z5lG2l1NPPzR-1.fit_lim.size_840x.jpg'
+        ];
+        initCarousel(images);
+    </script>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section contacto-footer">
+          <h3>Contacto</h3>
+          <p>Email: info@hardwaregamer.com</p>
+          <p>Teléfono: +54 11 1234-5678</p>
+        </div>
+        <div class="footer-section">
+          <h3>Nuestras redes sociales</h3>
+          <div class="footer-redes">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="../asset/img/logos-redes-sociales/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://x.com" target="_blank">
+              <img src="../asset/img/logos-redes-sociales/x.png" alt="Twitter" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="../asset/img/logos-redes-sociales/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://wa.me/265712345678" target="_blank">
+              <img src="../asset/img/logos-redes-sociales/whatsapp.png" alt="WhatsApp" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hardware Gamer. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+</body>
+</html>

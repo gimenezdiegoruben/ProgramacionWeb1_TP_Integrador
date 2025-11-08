@@ -1,0 +1,63 @@
+<!-- This is pages/ram.html -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardware Gamer - Memoria RAM</title>
+    <link rel="stylesheet" href="../asset/css/detalle.css" />
+  </head>
+  <body>
+    <header class="header-class">
+      <nav>
+        <ul class="menu-bar">
+          <li class="item-menu logo">
+            <a href="../index.html">
+              <img src="asset/img/logo.png" alt="Logo Hardware Gamer" />
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="../index.html">Inicio </a>
+          </li>
+          <li class="item-menu">
+            <a href="../tienda.html">Tienda</a>
+          </li>
+          <li class="item-menu"><a href="../contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contenedor-todo">
+      <h2>Memoria RAM Gamer</h2>
+      <section>
+        <div class="container-camiseta">
+          <button class="flecha izquierda" onclick="anteriorImagen()">
+            &#9664;
+          </button>
+          <img id="imagen-carrusel" src="" alt="" />
+          <button class="flecha derecha" onclick="siguienteImagen()">
+            &#9654;
+          </button>
+        </div>
+      </section>
+      <div class="descripcion">
+        <p>RAM de alta velocidad para gaming sin interrupciones.</p>
+        <h2>Precio: 20.000$ ARG</h2>
+      </div>
+      <br /><br />
+      <button class="boton-comprar">Añadir Al Carrito</button>
+      <br /><br />
+    </section>
+
+    <script src="../asset/js/carousel.js"></script>
+    <script>
+      // Inicializar carousel para RAM
+      const images = [
+        "https://cdn.mos.cms.futurecdn.net/aFrdtqm8QLfdsRBkwhDjcC.jpg",
+        "http://acemagic.com/cdn/shop/articles/DDR5-vs-DDR4-RAM_1a3916db-534c-4b48-b77e-2f2c1caa964a.jpg?v=1752204565",
+        "https://i.pcmag.com/imagery/articles/00i6LqBWfVc2HxobfSwy5vN-6.fit_lim.size_840x.jpg",
+      ];
+      initCarousel(images);
+    </script>
+  </body>
+</html>

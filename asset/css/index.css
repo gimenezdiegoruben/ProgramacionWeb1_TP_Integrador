@@ -1,0 +1,196 @@
+/* This is css/index.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 1;
+}
+
+.header {
+background-color: rgb(17, 17, 17); 
+display: flex; 
+min-height: 70px;
+align-items: center;
+justify-content: center
+}
+
+.menu-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.items-menu {
+    background-color: transparent;
+    color: rgb(240, 240, 240);
+    border: 2.2px solid rgb(15, 203, 93);
+    padding: 10px 15px;
+    border-radius: 10px; /* Redondeados */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.items-menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.items-menu:hover {
+    background-color: rgb(50, 204, 243); /* Color más claro al hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.items-menu.logo {
+    border: none;
+    padding: 0;
+}
+
+.items-menu.logo img {
+    height: 50px; /* Ajusta logo */
+    position: relative;
+
+}
+
+.carrusel {
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    max-height: 400px; /* Optimizado para no estirar */
+    overflow: hidden;
+
+}
+
+.carrusel-contenedor {
+    position: relative;
+}
+
+#imagen-carrusel {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain; /* Optimizado para que imágenes quepan sin estirarse */
+    border-radius: 8px;
+}
+
+.flecha {
+    background-color: rgba(74, 225, 236, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    border-radius: 15px;
+}
+
+.izquierda {
+    left: 5px;
+}
+
+.derecha {
+    right: 5px;
+}
+
+.flecha:hover {
+    background-color: rgb(164, 226, 255);
+    transform: scale(1.1);
+    transition: transform 0.2s, box-shadow 0.3s;
+    
+}
+
+.quienes-somos-logros {
+    padding: 15px;
+    margin: 20px 15px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;    
+-ms-text-combine-horizontal: all;
+}
+.quienes-somos-logros h1 {
+    color: rgb(45, 29, 193);
+    margin-bottom: 15px;
+}
+
+.footer {
+    background-color: #022150;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.contacto-footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.footer-redes a img {
+    width: 38px;
+    height: 38px;
+    padding: 3px;
+}
+
+.footer-redes a:hover {
+transition: transform 0.2s, box-shadow 0.3s;
+transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+@media (max-width: 600px) {
+    .container-form {
+        margin: 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+}
+

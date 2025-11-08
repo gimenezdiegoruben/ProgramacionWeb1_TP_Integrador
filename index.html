@@ -1,11 +1,127 @@
+<!-- This is index.html -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Friend Gammer - Inicio</title>
+    <link rel="stylesheet" href="asset/css/index.css" />
+  </head>
+  
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="menu-bar">
+          <li class="items-menu logo">
+            <a href="index.html">
+              <img src="asset/img/logos/local/logo-elite-neon.png" alt="Logo logo-elite-neon" />
+            </a>
+          </li>
+          <li class="items-menu">
+            <a href="index.html">Inicio </a>
+          </li>
+          <li class="items-menu"><a href="tienda.html">Tienda</a></li>
+          <li class="items-menu"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="background" style="background-image: url('./asset/img/fondos/fondo1.jpg')"></div>
     
-</body>
+    <main>
+      
+      <section class="carrusel">
+        <div class="carrusel-contenedor">
+          <button class="flecha izquierda" onclick="anteriorImagen()">
+            &#9664;
+          </button>
+          <img id="imagen-carrusel" src="" alt="Imagen del carrusel" />
+          <button class="flecha derecha" onclick="siguienteImagen()">
+            &#9654;
+          </button>
+        </div>
+      </section>
+
+   
+    
+      <section>
+        <div class="quienes-somos-logros">
+          <h1>¿Quiénes Somos?</h1>
+          <p>
+            En Hardware Gamer, somos apasionados por el mundo del gaming. Como
+            tienda local especializada en hardware para PCs de escritorio, nos
+            dedicamos a proporcionar componentes de calidad superior que
+            potencian tu experiencia de juego. Fundados en 2020, hemos crecido
+            gracias a nuestra compromiso con la innovación y el servicio al
+            cliente, ofreciendo asesoramiento personalizado para armar la PC
+            perfecta.
+          </p>
+        </div>
+
+        <div class="quienes-somos-logros">
+          <h1>Nuestros Logros</h1>
+          <p>
+            Hemos equipado a miles de gamers con setups de alto rendimiento,
+            logrando reconocimientos locales por nuestra excelencia en servicio.
+            Destacamos por ser distribuidores exclusivos de marcas premium en
+            nuestra región, y hemos patrocinado eventos de esports,
+            contribuyendo al crecimiento de la comunidad gamer argentina.
+            Nuestro enfoque en calidad nos ha permitido mantener una tasa de
+            satisfacción del 98% entre nuestros clientes.
+          </p>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section contacto-footer">
+          <h3>Contacto</h3>
+          <p>Email: info@hardwaregamer.com</p>
+          <p>Teléfono: +54 2657 1234-5678</p>
+        </div>
+        <div class="footer-section">
+          <h3>Nuestras redes sociales</h3>
+          <div class="footer-redes">
+            <a href="https://www.facebook.com" target="_blank"
+              ><img
+                src="./asset/img/logos/redes-sociales/facebook.png" alt="Facebook"
+              />
+            </a>
+            <a href="https://x.com" target="_blank">
+              <img src="./asset/img/logos/redes-sociales/x.png" alt="Twitter" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img
+                src="./asset/img/logos/redes-sociales/instagram.png"
+                alt="Instagram"
+              />
+            </a>
+            <a href="https://wa.me/265712345678" target="_blank">
+              <img
+                src="./asset/img/logos/redes-sociales/whatsapp.png"
+                alt="WhatsApp"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hardware Gamer. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="asset/js/carousel.js"></script>
+    <script>
+      // Inicializar carousel para inicio con imágenes específicas
+      const images = [
+        "asset/img/carrousell-index/1index.png",
+        "asset/img/carrousell-index/2index.png",
+        "asset/img/carrousell-index/3index.png",
+      ];
+      initCarousel(images);
+    </script>
+
+  </body>
 </html>

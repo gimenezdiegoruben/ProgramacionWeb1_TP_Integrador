@@ -1,0 +1,60 @@
+<!-- This is pages/ssd.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Gamer - Disco SSD</title>
+    <link rel="stylesheet" href="../asset/css/detalle.css"/>
+</head>
+<body>
+  
+    <header class="header-class">
+      <nav>
+        <ul class="menu-bar">
+          <li class="item-menu logo">
+            <a href="../index.html">
+              <img src="asset/img/logo.png" alt="Logo Hardware Gamer" />
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="../index.html">Inicio </a>
+          </li>
+          <li class="item-menu">
+            <a href="../tienda.html">Tienda</a>
+          </li>
+          <li class="item-menu"><a href="../contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contenedor-todo">
+        <h2>Discos SSD Gamer</h2>
+        <section>
+            <div class="container-camiseta">
+                <button class="flecha izquierda" onclick="anteriorImagen()">&#9664;</button>
+                <img id="imagen-carrusel" src="" alt="">
+                <button class="flecha derecha" onclick="siguienteImagen()">&#9654;</button>
+            </div>
+        </section>
+        <div class="descripcion">
+            <p>Almacenamiento rápido para cargas instantáneas.</p>
+            <h2>Precio: 15.000$ ARG</h2>
+        </div>
+        <br><br>
+        <button class="boton-comprar">Añadir Al Carrito</button>
+        <br><br>
+    </section>
+
+    <script src="../asset/js/carousel.js"></script>
+    <script>
+        // Inicializar carousel para SSD
+        const images = [
+            'https://www.pcworld.com/wp-content/uploads/2024/03/best_ssd_hero.jpg?quality=50&strip=all',
+            'https://i.pcmag.com/imagery/articles/01y4G5lYUKTYJ9x2m6oLmwz-1.fit_lim.size_840x.jpg',
+            'https://cdn.mos.cms.futurecdn.net/7q2D8Z8Z5ZJ5ZJ5ZJ5ZJ5Z-1200-80.jpg'
+        ];
+        initCarousel(images);
+    </script>
+</body>
+</html>

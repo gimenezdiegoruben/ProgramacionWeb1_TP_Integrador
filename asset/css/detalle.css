@@ -1,0 +1,169 @@
+/* Updated asset/css/detalle.css (asumiendo que existe, pero como no estaba completo, lo ajusto a paleta) */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(42, 172, 248, 1);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header-class {
+    background-color: #1080cf;
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0.2rem;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.item-menu {
+    background-color: transparent;
+    color: #f0f0f0;
+    border: 1px solid rgba(15, 203, 93, 1);
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.item-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.item-menu:hover {
+    background-color: rgba(50, 204, 243, 1);
+}
+
+.item-menu.logo {
+    border: none;
+    padding: 0;
+}
+
+item-menu.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.container-camiseta {
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+#imagen-carrusel {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.flecha {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.izquierda {
+    left: 10px;
+}
+
+.derecha {
+    right: 10px;
+}
+
+.flecha:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.descripcion {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contenedor-todo {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.boton-comprar {
+    padding: 10px 20px;
+    font-size: 26px;
+    color: white;
+    background-color: rgba(2, 53, 116, 1);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.boton-comprar:hover {
+    background-color: rgba(18, 205, 24, 1);
+}
+
+.footer {
+    background-color: rgba(2, 33, 80, 1);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.contacto-footer {
+    text-align: left;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-redes a img {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+}
